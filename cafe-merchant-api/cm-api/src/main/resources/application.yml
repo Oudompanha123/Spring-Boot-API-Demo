@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cafe-merchant-api
+  profiles:
+    active: local
+
+jwt:
+  expiration: 2m
+  refresh-expiration: 1d
+
+rsa:
+  public-key: classpath:certs/public-key.pem
+  private-key: classpath:certs/private-key.pem

@@ -1,0 +1,5 @@
+rootProject.name = 'cafe-merchant-api'
+include 'cm-common'
+include 'cm-client'
+include 'cm-api'
+

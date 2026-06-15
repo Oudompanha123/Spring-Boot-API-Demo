@@ -1,0 +1,27 @@
+plugins {
+    id 'java-library'
+}
+
+bootWar {
+    enabled = false
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+group = 'com.ppcb.cafemerchant'
+version = '1.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':cm-common')
+    implementation 'org.apache.httpcomponents.client5:httpclient5:5.5'
+}

@@ -1,0 +1,43 @@
+spring:
+  sql:
+    init:
+      mode: always
+  datasource:
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 10
+    url: jdbc:postgresql://localhost:5432/ppcbank_db
+    username: postgres
+    password: Panhaoudom123
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      enabled: true
+
+logging:
+  level:
+    root: info
+    org.springframework.security: trace
+    org.hibernate: info
+    org.hibernate.SQL: debug
+    org.hibernate.orm.jdbc.bind: trace
+
+file:
+  server-path: D:/upload-files/
+  client-path: /api/v1/image
+  base-url: http://localhost:9000${file.client-path}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, caches
+
+server:
+  port: 9000
