@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Cafe_Merchant_API.iml" filepath="$PROJECT_DIR$/.idea/Cafe_Merchant_API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cm-api/cafe-merchant-api.cm-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cm-api/cafe-merchant-api.cm-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cm-common/cafe-merchant-api.cm-common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cm-common/cafe-merchant-api.cm-common.main.iml" />
+    </modules>
+  </component>
+</project>
