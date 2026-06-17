@@ -21,10 +21,9 @@ public class ProfileServiceImpl implements ProfileService{
 
         ProfileResponseInterface userProfile = userRepository.findUserProfileById(2);
 
-        String profilePictureUrl = null;
-        if (userProfile.getProfileImage() != null && !userProfile.getProfileImage().isEmpty()) {
-            profilePictureUrl = fileInfoProperties.getBaseUrl() + "/" + userProfile.getProfileImage();
-        }
+        String profilePictureUrl = (userProfile.getProfileImage() != null && !userProfile.getProfileImage().isEmpty())
+                ? fileInfoProperties.getBaseUrl() + "/" + userProfile.getProfileImage()
+                : null;
 
         return ProfileResponse.builder()
                 .fullName(userProfile.getFullName())
